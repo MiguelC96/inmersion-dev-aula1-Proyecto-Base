@@ -24,6 +24,7 @@ Interfaz de Usuario:
 Permite al usuario ingresar la longitud deseada para la contraseña.
 Muestra la contraseña generada y el mensaje de fortaleza.
 Incluye un botón para copiar la contraseña al portapapeles.
+Un evento que limpia los valores de los contenedores de texto, luego de usar el boton copiar.
 
 <h2>Desafíos Propuestos</h2>
 Agregar Símbolos Especiales:
