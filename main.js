@@ -67,10 +67,10 @@
             let mensaje;
             let tipoAlerta;
 
-            if (this.contrasena.length >= 8 && this.fuerza >= 3) {
+            if (this.contrasena.length >= 8 && this.fuerza >= 4) {
                 mensaje = 'Fuerte';
                 tipoAlerta = 'success';
-            } else if (this.contrasena.length >= 5 && this.fuerza >= 2) {
+            } else if (this.contrasena.length >= 5 && this.fuerza >= 3) {
                 mensaje = 'Media';
                 tipoAlerta = 'warning';
             } else {
