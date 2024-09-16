@@ -96,11 +96,46 @@
             GestorAlertas.mostrarAlertas(fortaleza.tipoAlerta, `Fuerza de la contraseña: ${fortaleza.mensaje}`);
         }
 
+        static restablecerEstado() {
+            const contrasenaInput = document.getElementById('contrasena');
+            contrasenaInput.value = '';
+            contrasenaInput.style.borderColor = '';
+            document.getElementById('cantidad').value = '';
+        }
+
         static obtenerLongitud() {
             const longitud = document.getElementById('cantidad').value;
             return parseInt(longitud) || 4; 
         }
     }
+
+    // Función para copiar al portapapeles
+    function copiarContrasena() {
+        const contrasenaInput = document.getElementById('contrasena');
+        
+        
+        contrasenaInput.select();
+        contrasenaInput.setSelectionRange(0, 99999); // Para dispositivos móviles
+    
+        
+        try {
+            const exitoso = document.execCommand('copy');
+            if (exitoso) {
+                GestorAlertas.mostrarAlertas('success', 'Contraseña copiada al portapapeles.');
+            } else {
+                GestorAlertas.mostrarAlertas('error', 'No se pudo copiar la contraseña.');
+            }
+        } catch (err) {
+            GestorAlertas.mostrarAlertas('error', 'No se pudo copiar la contraseña.');
+        }
+        
+        // Restablecer el estado del contenedor
+        ControladorUI.restablecerEstado();
+    }
+    
+
+    document.getElementById('copiar-contrasena').addEventListener('click', copiarContrasena);
+
 
     // Clase para gestionar alertas
     class GestorAlertas {
