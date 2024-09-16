@@ -1,4 +1,5 @@
-#Generador de Contraseñas
+<h1>Generador de Contraseñas</h1>
+
 Este proyecto es una aplicación web para generar contraseñas seguras utilizando JavaScript. La aplicación permite generar contraseñas aleatorias con diferentes longitudes y configuraciones, y evaluar su fortaleza en función de varios criterios.
 
 <h2>Descripción</h2>
