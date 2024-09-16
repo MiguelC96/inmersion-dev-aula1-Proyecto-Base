@@ -135,5 +135,60 @@ h1 {
     font-family: 'Inter', sans-serif;
 }
 
+/*contenedor de alerta */
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    position: relative;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.alert.show {
+    opacity: 1;
+    visibility: visible;
+}
+.alert .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: inherit;
+}
+.alert.success {
+    background-color: #00811e;
+    color: #f6f6f6;
+    border: 1px solid #c3e6cb;
+}
 
-
+.alert.error {
+    background-color: #a3000e;
+    color: #000000;
+    border: 1px solid #f5c6cb;
+}
+.alert.warning {
+    background-color: #be4d07;
+    color: #ffffff;
+    border: 1px solid #ffeeba;
+}
+.alert.info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+}
+.alert.hide {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
