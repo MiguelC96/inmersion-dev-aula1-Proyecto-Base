@@ -89,10 +89,6 @@
         }
 
         static mostrarMensajeFortaleza(fortaleza) {
-            const inputContrasena = document.getElementById('contrasena');
-            inputContrasena.style.borderColor = fortaleza.tipoAlerta === 'success' ? 'green' : 
-                                                fortaleza.tipoAlerta === 'warning' ? 'orange' : 'red';
-
             GestorAlertas.mostrarAlertas(fortaleza.tipoAlerta, `Fuerza de la contraseña: ${fortaleza.mensaje}`);
         }
 
@@ -115,8 +111,7 @@
         
         
         contrasenaInput.select();
-        contrasenaInput.setSelectionRange(0, 99999); // Para dispositivos móviles
-    
+        contrasenaInput.setSelectionRange(0, 99999); 
         
         try {
             const exitoso = document.execCommand('copy');
@@ -129,7 +124,6 @@
             GestorAlertas.mostrarAlertas('error', 'No se pudo copiar la contraseña.');
         }
         
-        // Restablecer el estado del contenedor
         ControladorUI.restablecerEstado();
     }
     
