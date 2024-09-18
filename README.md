@@ -1,6 +1,6 @@
 <h1>Generador de Contraseñas</h1>
 
-Este proyecto es una aplicación web para generar contraseñas seguras utilizando JavaScript. La aplicación permite generar contraseñas aleatorias con diferentes longitudes y configuraciones, y evaluar su fortaleza en función de varios criterios.
+Este proyecto es parte de el primer reto de la InmersionDev_ con JavaScript de AluraLatam, consiste en una aplicación web para generar contraseñas seguras utilizando JavaScript. La aplicación permite generar contraseñas aleatorias con diferentes longitudes y configuraciones, y evaluar su fortaleza en función de varios criterios.
 
 <h2>Descripción</h2>
 La aplicación está diseñada para enseñar los fundamentos de JavaScript a través de la creación de un generador de contraseñas. Utiliza variables, funciones, condicionales y bucles para generar contraseñas y evaluar su seguridad.
